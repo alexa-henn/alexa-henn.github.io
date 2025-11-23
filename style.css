@@ -1,0 +1,69 @@
+body {
+    background-color: #242428;
+    color: #F8F4F2;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: 
+    "header header"
+    "left right"
+    "footer footer";
+}
+
+header {
+    grid-area: header;
+    padding: 20px;
+}
+
+left {
+    grid-area: left-content;
+}
+
+right {
+    grid-area: right-content;
+    
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+#profile {
+    padding: 20px;
+    border: 1px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#description {
+    font-style: italic;
+    text-align: center;
+}
+
+#coming-soon {
+    font-size: 70px;
+    position: relative;
+    right: 90px;
+}
+
+#web-1 {
+    position: relative;
+    right: 90px;
+    z-index: 3;
+}
+
+#web-2 {
+    position: relative;
+    left: 120px;
+    bottom: 150px;
+    z-index: 2;
+}
+
+#web-3 {
+    position: relative;
+    right: 60px;
+    bottom: 250px;
+}
